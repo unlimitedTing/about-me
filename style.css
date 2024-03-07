@@ -1,0 +1,139 @@
+/* Apply a natural box layout model to all elements */
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  /* Reset some basic elements */
+  body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #e9ecef;
+    color: #333;
+  }
+  
+  /* Google Font Import */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+  
+  /* Header styles */
+header {
+    background: #007bff; /* A deep gray for a more modern look */
+    color: #ffffff;
+    padding: 1.5em 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5em;
+    font-size: 2.5em; /* Make the title larger */
+  }
+  
+  /* Navigation menu styles */
+  nav {
+    text-align: center;
+    padding: 1em 0; /* Add more vertical padding for a spacious look */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.5em 1em; /* Increase padding for a larger click area */
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  nav ul li a:hover,
+  nav ul li a:focus { /* Add a focus state for accessibility */
+    background-color: #0056b3; /* A slightly darker blue for the hover state */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Add a sticky nav feature */
+  nav {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  
+  /* Main content styles */
+  main {
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  main section {
+    margin-bottom: 20px;
+  }
+  
+  main section h2 {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    color: #007bff;
+  }
+
+  #courses a{
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  /* Footer styles */
+  footer {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Add some space around the elements */
+  main section, nav ul, footer p {
+    padding: 10px 0;
+  }
+  
+  /* Style for unordered lists in the content */
+  main ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  main ul li {
+    padding: 5px 0;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  main ul li:before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+  }
+  
+
+  
